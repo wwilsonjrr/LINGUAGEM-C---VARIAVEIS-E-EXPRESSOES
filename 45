@@ -1,0 +1,40 @@
+/*
+45. Faça um programa para converter uma letra maiúscula em letra minúscula.
+Use a tabela ASCII para resolver o problema.
+*/
+
+#include <stdio.h>   // Biblioteca padrão de entrada e saída (printf, scanf)
+#include <stdlib.h>  // Biblioteca padrão com funções auxiliares (ex: system)
+
+int main()  // Função principal do programa — ponto de partida da execução
+{
+    char maiuscula, minuscula;  // Declara duas variáveis do tipo char (caractere): uma para armazenar a letra maiúscula e outra para a minúscula
+
+    // Exibe mensagem pedindo que o usuário digite uma letra maiúscula
+    printf("Digite uma letra maiuscula: \n");
+
+    // Lê um caractere digitado pelo usuário e armazena em 'maiuscula'
+    scanf("%c", &maiuscula);
+
+    // Verifica se o caractere digitado está entre 'A' e 'Z' (ou seja, se é uma letra maiúscula válida)
+    if (maiuscula >= 'A' && maiuscula <= 'Z')
+    {
+        // Se for uma letra maiúscula, converte para minúscula somando 32
+        // Isso porque na tabela ASCII, a diferença entre letras maiúsculas e minúsculas é de 32 posições
+        minuscula = maiuscula + 32;
+
+        // Mostra na tela a letra original (maiúscula) e sua versão em minúscula
+        printf("A letra %c em minusculo eh: %c \n", maiuscula, minuscula);
+    }
+    else  // Caso contrário (se o usuário não digitou uma letra maiúscula)
+    {
+        // Informa que o caractere digitado não é uma letra maiúscula
+        printf("O caractere digitado nao eh uma letra maiuscula.\n");
+    }
+
+    // Pausa a execução do programa até que o usuário pressione uma tecla (útil no Windows)
+    system("pause");
+
+    // Retorna 0, indicando que o programa terminou corretamente
+    return 0;
+}
