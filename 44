@@ -1,0 +1,33 @@
+/*
+44. Receba a altura do degrau de uma escada e a altura que o usuário deseja alcançar
+subindo a escada. Calcule e mostre quantos degraus o usuário deverá subir para atingir
+seu objetivo.
+*/
+
+#include <stdio.h>   // Biblioteca padrão para funções de entrada e saída
+#include <stdlib.h>  // Biblioteca padrão para funções auxiliares (ex: system)
+
+int main()  // Função principal do programa
+{
+    float altura_degrau, altura_desejada, qtd_degraus; // Declara três variáveis do tipo float
+
+    // Solicita ao usuário que digite a altura de um degrau em centímetros
+    printf("Digite a altura do degrau (em cm): ");
+    scanf("%f", &altura_degrau); // Lê o valor digitado e armazena em altura_degrau
+
+    // Solicita ao usuário que informe a altura que deseja alcançar
+    printf("Digite a altura que voce deseja alcancar (em cm): ");
+    scanf("%f", &altura_desejada); // Lê o valor digitado e armazena em altura_desejada
+
+    // Calcula quantos degraus são necessários para alcançar a altura desejada
+    // Fórmula: quantidade = altura desejada ÷ altura do degrau
+    qtd_degraus = altura_desejada / altura_degrau;
+
+    // Mostra o resultado na tela, com duas casas decimais
+    printf("Voce devera subir %.2f degraus para alcancar a altura desejada.\n", qtd_degraus);
+
+    // Pausa o programa (opcional no Windows)
+    system("pause");
+
+    return 0; // Retorna 0 indicando que o programa terminou corretamente
+}
