@@ -1,0 +1,22 @@
+/*  40. Uma empresa contrata um encanador a R$30,00 por dia. Faça um programa que solicite
+ o número de dias trabalhados pelo encanador e imprima a quantia líquida que deverá ser
+ paga, sabendo-se que s˜ão descontados 8% para imposto de renda.  */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float quantia, quantia_liquida, dias, por_dia = 30.00;
+
+    printf("Digite o numero de dias trabalhados: \n");
+    scanf("%f", &dias);
+    quantia = dias * por_dia;
+    quantia_liquida = quantia - quantia*0.08;
+
+    printf("A quantidade liquida a receber pelo trablhado sera: %.2f \n", quantia_liquida);
+
+    system("pause");
+    return 0;
+}
