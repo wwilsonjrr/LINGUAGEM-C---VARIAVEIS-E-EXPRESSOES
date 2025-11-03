@@ -1,0 +1,19 @@
+/*  28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos
+ três valores lidos.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float A, B, C, SOMA;
+
+    printf("Digite os tres valores quaisquer respectivamente: \n");
+    scanf("%f %f %f", &A, &B, &C);
+    SOMA = A*A + B*B + C*C;
+
+    printf("A soma dos quadrados dos tres valores lidos vale: %.2f \n", SOMA);
+
+    system("pause");
+    return 0;
+}
