@@ -1,0 +1,20 @@
+/*  38. Leia o salário de um funcionário. Calcule e imprima o valor do novo salário, sabendo que
+ ele recebeu um aumento de 25%.  */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float Salario, Novo_Salario;
+
+    printf("Digite o salario do funcionario: \n");
+    scanf("%f", &Salario);
+    Novo_Salario = Salario + Salario*0.25;
+
+    printf("O novo salario do funcionario vale: %.2f \n", Novo_Salario);
+
+    system("pause");
+    return 0;
+}
