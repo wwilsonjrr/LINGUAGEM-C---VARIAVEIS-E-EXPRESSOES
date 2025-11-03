@@ -1,0 +1,18 @@
+ /*  33. Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float L, A;
+
+    printf("Digite a medida do lado do quadrado: \n");
+    scanf("%f", &L);
+    A = L*L;
+
+    printf("A area do quadrado vale: %.2f \n", A);
+
+    system("pause");
+    return 0;
+}
