@@ -1,0 +1,19 @@
+/*  48. Leia 3 valores inteiros em horas, minutos e segundos, e imprima-o em segundos.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int h, m, s, ts;
+
+    printf("Digite horas, minutos e segundos: \n");
+    scanf("%d %d %d", &h, &m, &s);
+
+    ts = s + m*60 + h*3600;
+
+    printf("Total de segundos eh: %d \n", ts);
+
+    system("pause");
+    return 0;
+}
