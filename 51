@@ -1,0 +1,25 @@
+ /*  51. Escreva um programa que leia as coordenadas x e y de pontos no R2 e calcule sua
+ distância da origem (0,0).  */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    float x0 = 0, x, y0 = 0, y, d;
+
+    printf("Digite o valor da coordenada x: \n");
+    scanf("%f", &x);
+
+    printf("Digite o valor da coordenada y: \n");
+    scanf("%f", &y);
+
+    d = sqrt(pow(x - x0, 2) + pow(y - y0, 2));
+
+    printf("A distancia entre as coordenadas vale: %.2f \n", d);
+
+    system("pause");
+    return 0;
+}
