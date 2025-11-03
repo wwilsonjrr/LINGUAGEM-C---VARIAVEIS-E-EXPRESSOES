@@ -1,0 +1,20 @@
+ /*  24. Leia um valor de área em metros quadrados m2 e apresente-o convertido em acres. A
+ fórmula de convers˜ão é: A = M * 0.000247, sendo M a área em metros quadrados e A
+ a área em acres.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float M, A;
+
+    printf("Digite um valor de area em metros quadrados: \n");
+    scanf("%f", &M);
+    A = M * 0.000247;
+
+    printf("A area convertida em acres vale: %.2f \n", A);
+
+    system("pause");
+    return 0;
+}
