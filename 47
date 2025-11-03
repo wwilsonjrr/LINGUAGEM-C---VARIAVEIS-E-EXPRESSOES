@@ -1,0 +1,25 @@
+/* 47. Leia um numero inteiro de 4 digitos (de 1000 a 9999) e imprima 1 digito por linha.  */
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+
+    printf("Digite um numero inteiro positivo de 4 digitos (de 1000 a 9999):  ");
+    scanf("%d", &num);
+
+    printf("%d\n", (num/1000)%1000);
+
+    printf("%d\n", (num/100)%10);
+
+    printf("%d\n", (num/10)%10);
+
+    printf("%d\n", (num/1)%10);
+
+    system("pause");
+    return 0;
+}
