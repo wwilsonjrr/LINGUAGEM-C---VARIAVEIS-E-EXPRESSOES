@@ -1,0 +1,21 @@
+/*  35. Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
+ hipotenusa = a^2 +b^2. Faça um programa que receba os valores de a e b e calcule
+ o valor da hipotenusa através da equação. Imprima o resultado dessa operação.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h> // função sqrt
+
+int main()
+{
+    float A, B, HIP;
+
+    printf("Digite os valores dos catetos A e B: \n");
+    scanf("%f %f", &A, &B);
+    HIP = sqrt(A*A + B*B);
+
+    printf("O valor da hipotenusa vale: %.2f \n", HIP);
+
+    system("pause");
+    return 0;
+}
