@@ -1,0 +1,22 @@
+/*  32. Leia um número inteiro e imprima a soma do sucessor de seu triplo com o antecessor de
+ seu dobro.  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num, antecessor, sucessor, soma;
+
+    printf("Digite um numero inteiro qualquer: \n");
+    scanf("%d", &num);
+
+    antecessor = (2*num - 1);
+    sucessor = (3*num + 1);
+    soma = sucessor + antecessor;
+
+    printf("A soma do sucessor de seu triplo com o antecessor de seu dobro vale: %d \n", soma);
+
+    system("pause");
+    return 0;
+}
